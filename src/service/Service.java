@@ -34,9 +34,9 @@ public class Service {
     public double getTotalPriceOfHouseByType(HouseType houseType) {
         double priceSummation = 0;
 
-        List<BaseHouse> filteredList = listOfHouses.stream()
+        List<BaseHouse> filteredList = listOfHouses.stream() //This stream function filters the house list with the specific house type user wants.
                 .filter(house -> house.getHomeType() == houseType)
-                .toList();
+                .toList(); 
 
         for (BaseHouse filteredHouse : filteredList) {
                 priceSummation = priceSummation +  filteredHouse.getPrice();
