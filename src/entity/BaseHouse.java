@@ -3,7 +3,7 @@ package entity;
 
 import constants.HouseType;
 
-public abstract class BaseHouse {
+public abstract class BaseHouse { // This is my Base class. All of the house types have common properties. Only property they differ on is their house types.
     private double area;
     private double price;
     private int numberOfRooms;
