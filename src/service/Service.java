@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Service {
 
-    private List<BaseHouse> listOfHouses = new ArrayList<>();
+    private List<BaseHouse> listOfHouses = new ArrayList<>(); // Used a single list to get it simple and shorter. I will be using streams to filter the house type when needed.
 
     public List<BaseHouse> getListOfHouses() {
         return listOfHouses;
