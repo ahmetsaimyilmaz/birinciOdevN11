@@ -7,8 +7,7 @@ import service.Service;
 
 import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         List<BaseHouse> baseHouseList = getBaseHouses();
@@ -26,7 +25,7 @@ public class Main {
         System.out.println("Houses with 4 rooms and 1 living room: " + service.filterHouseByRoomLivingRoomSelection(4, 1).toString());
     }
 
-    private static List<BaseHouse> getBaseHouses() {
+    private static List<BaseHouse> getBaseHouses() {  //Generates a list which consists of 3 houses, 3 summer houses and 3 villas.
         BaseHouse firstHouse = new House(200, 50000, 4, 1);
         BaseHouse secondHouse = new House(150, 35000, 1, 1);
         BaseHouse thirdHouse = new House(175,45000, 2, 1);
